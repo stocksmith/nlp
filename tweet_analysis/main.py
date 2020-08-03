@@ -45,7 +45,7 @@ def get_tweets_for_model(cleaned_tokens_list):
         yield dict([token, True] for token in tweet_tokens)
 
 
-if __name__ == "__main__":
+def driver():
 
     # String varaiables of the dataset
     positive_tweets = twitter_samples.strings('positive_tweets.json')
@@ -102,3 +102,7 @@ if __name__ == "__main__":
 
     print(custom_tweet, classifier.classify(
         dict([token, True] for token in custom_tokens)))
+
+
+# Calling driver function
+driver()
