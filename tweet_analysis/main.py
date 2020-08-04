@@ -9,6 +9,14 @@ from nltk.tokenize import word_tokenize
 import re
 import string
 import random
+import nltk
+
+# Supporting downloads
+nltk.download('twitter_samples')
+nltk.download('stopwords')
+nltk.download('averaged_perceptron_tagger')
+nltk.download('wordnet')
+nltk.download('punkt')
 
 
 # Performing normalization with lemmatization and removes noise
